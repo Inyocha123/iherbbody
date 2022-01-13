@@ -501,7 +501,69 @@
 			line-height:150% !important;
 		}
 
+}}div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center
 }
+div.banner {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center
+ 
+}
+.button {
+  background-color: #EB6954; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid black
+}
+.button:hover {
+  background-color: #EB6954; /* Green */
+  color: white;
+}
+.button {
+			animation: effect 0.5s infinite;
+		}
+
+		@keyframes effect {
+			0% {
+				transform: translateX(0px) rotate(0deg);
+			}
+
+			20% {
+				transform: translateX(-1px) rotate(-0deg);
+			}
+
+			40% {
+				transform: translateX(-0.5px) rotate(-0deg);
+			}
+
+			60% {
+				transform: translateX(1px) rotate(0deg);
+			}
+
+			80% {
+				transform: translateX(0.5px) rotate(0deg);
+			}
+
+			100% {
+				transform: translateX(0px) rotate(0deg);
+            }    
+		}
+ 
 
 
 </style><link rel="stylesheet" type="text/css" href="https://eep.io/mc-release/1.1.1d2228b674c2118a567c756500a8d15f73f24f480/css/signup-forms/pages/common.css"></head>
@@ -983,6 +1045,8 @@
 </div></div>
                 </div>
             </div>
-        </div>
-   </script></body>
+	    </div>
+   <div class="banner"><a href="formpage.html" class="button">اضغط هنا للطلب</a></div>
+	    </script>
+	</body>
 </html>
